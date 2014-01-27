@@ -8,9 +8,37 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".CreatingNewButton" >
 
-    <TextView
+    <EditText
+        android:id="@+id/enter_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:hint="@string/enter_name" 
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:fitsSystemWindows="True"
+        android:text="@string/enterNameText"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/enter_name"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/enter_name"
+        android:layout_marginTop="54dp"
+        android:onClick="createCounter"
+        android:text="@string/saveNew" 
+        android:textSize="18sp" />
 
 </RelativeLayout>
