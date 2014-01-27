@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.support.v4.app.NavUtils;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -52,6 +53,12 @@ public class CreatingNewButton extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	public void creationComplete(View view) {
+	    // NEED TO FILL THIS IN LATER, CREATE NEW BUTTON/COUNTER WHEN PRESSED
+		//Intent intent = new Intent(this, CreatingNewButton.class);
+		//startActivity(intent);
+		finish();
 	}
 
 }

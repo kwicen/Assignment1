@@ -37,8 +37,9 @@
         android:layout_alignRight="@+id/textView1"
         android:layout_below="@+id/enter_name"
         android:layout_marginTop="54dp"
-        android:onClick="createCounter"
+        android:onClick="creationComplete"
         android:text="@string/saveNew" 
-        android:textSize="18sp" />
+        android:textSize="18sp"
+         />
 
 </RelativeLayout>

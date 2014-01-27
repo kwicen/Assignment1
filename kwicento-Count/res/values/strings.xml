@@ -5,7 +5,7 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="buttonCreate">New Counter</string>
-    <string name="title_activity_creating_new_button">CreatingNewButton</string>
+    <string name="title_activity_creating_new_button">Creating New Counter</string>
     <string name="enterNameText">Name of New Button</string>
     <string name="enter_name">Enter here</string>
 	<string name="saveNew">Create</string>
