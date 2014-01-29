@@ -1,0 +1,15 @@
+﻿fixed array list
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   kwicento-Count/bin/classes.dex
+#	modified:   kwicento-Count/bin/classes/com/example/kwicento_count/CounterScreen.class
+#	modified:   kwicento-Count/bin/classes/com/example/kwicento_count/CreatingNewButton.class
+#	modified:   kwicento-Count/bin/kwicento-Count.apk
+#	modified:   kwicento-Count/src/com/example/kwicento_count/CounterScreen.java
+#	modified:   kwicento-Count/src/com/example/kwicento_count/CreatingNewButton.java
+#
+
