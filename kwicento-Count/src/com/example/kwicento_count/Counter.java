@@ -10,6 +10,7 @@ public class Counter {
 	protected Button countButton;
 	protected int count;
 	protected ArrayList <Counts> lst;
+	protected String name;
 	
 	
 	public Button getCountButton() {
