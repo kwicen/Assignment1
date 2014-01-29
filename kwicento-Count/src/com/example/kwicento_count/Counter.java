@@ -44,7 +44,6 @@ public class Counter {
 	public void reset(View v)
 	{
 		(this.count) = 0;
-		//ArrayList <Counts> newlst = new ArrayList;
-		//(this.lst) = (new ArrayList <Counts> newlst);
+		ArrayList <Counts> lst = new ArrayList <Counts>();
 	}
 }
