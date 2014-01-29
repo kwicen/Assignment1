@@ -1,5 +1,7 @@
 package com.example.kwicento_count;
 
+import java.util.ArrayList;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.ListActivity;
@@ -8,11 +10,14 @@ import android.view.Menu;
 import android.view.View;
 
 public class CounterScreen extends Activity {
+	
+	protected ArrayList <Counter> counterList;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_counter_screen);
+		ArrayList <Counter> counterList = new ArrayList <Counter>();
 	}
 
 	@Override

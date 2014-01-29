@@ -58,6 +58,7 @@ public class CreatingNewButton extends Activity {
 	    // NEED TO FILL THIS IN LATER, CREATE NEW BUTTON/COUNTER WHEN PRESSED
 		//Intent intent = new Intent(this, CreatingNewButton.class);
 		//startActivity(intent);
+		
 		finish();
 	}
 
