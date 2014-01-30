@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.kwicento_count.CounterScreen"
+            android:name="com.kwicento.kwicento_count.CounterScreen"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,17 +23,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.kwicento_count.CreatingNewButton"
+            android:name="com.kwicento.kwicento_count.CreatingNewButton"
             android:label="@string/title_activity_creating_new_button"
-            android:parentActivityName="com.example.kwicento_count.CounterScreen" >
+            android:parentActivityName="com.kwicento.kwicento_count.CounterScreen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.kwicento_count.CounterScreen" />
         </activity>
         <activity
-            android:name="com.example.kwicento_count.CounterListScreen"
+            android:name="com.kwicento.kwicento_count.CounterListScreen"
             android:label="@string/title_activity_counter_list_screen"
-            android:parentActivityName="com.example.kwicento_count.CounterScreen" >
+            android:parentActivityName="com.kwicento.kwicento_count.CounterScreen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.kwicento_count.CounterScreen" />
