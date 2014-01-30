@@ -12,6 +12,6 @@
     <string name="welcome1">Count</string>
     <string name="welcome2">For all your counting needs!</string>
     <string name="listButtonText">See Existing</string>
-    <string name="title_activity_counter_list_screen">CounterListScreen</string>
+    <string name="title_activity_counter_list_screen">List of Counters</string>
 
 </resources>
