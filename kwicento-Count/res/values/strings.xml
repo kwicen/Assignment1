@@ -8,8 +8,10 @@
     <string name="title_activity_creating_new_button">Creating New Counter</string>
     <string name="enterNameText">Name of New Button</string>
     <string name="enter_name">Enter here</string>
-	<string name="saveNew">Create</string>
-	<string name="welcome1">Count</string>
-	<string name="welcome2">For all your counting needs!</string>
-    
+    <string name="saveNew">Create</string>
+    <string name="welcome1">Count</string>
+    <string name="welcome2">For all your counting needs!</string>
+    <string name="listButtonText">See Existing</string>
+    <string name="title_activity_counter_list_screen">CounterListScreen</string>
+
 </resources>

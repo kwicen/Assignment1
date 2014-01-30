@@ -30,6 +30,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.kwicento_count.CounterScreen" />
         </activity>
+        <activity
+            android:name="com.example.kwicento_count.CounterListScreen"
+            android:label="@string/title_activity_counter_list_screen"
+            android:parentActivityName="com.example.kwicento_count.CounterScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.kwicento_count.CounterScreen" />
+        </activity>
     </application>
 
 </manifest>

@@ -8,36 +8,46 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".CounterScreen" >
 
-     <TextView
-         android:id="@+id/textView1"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignParentTop="true"
-         android:layout_centerHorizontal="true"
-         android:layout_marginTop="27dp"
-         android:fitsSystemWindows="True"
-         android:text="@string/welcome1"
-         android:textSize="25sp" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:fitsSystemWindows="True"
+        android:text="@string/welcome1"
+        android:textSize="25sp" />
 
-     <TextView
-         android:id="@+id/textView2"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_below="@+id/textView1"
-         android:layout_centerHorizontal="true"
-         android:layout_marginTop="20dp"
-         android:fitsSystemWindows="True"
-         android:text="@string/welcome2"
-         android:textSize="20sp"
-         android:textStyle="italic" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fitsSystemWindows="True"
+        android:text="@string/welcome2"
+        android:textSize="20sp"
+        android:textStyle="italic" />
 
-     <Button
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_below="@+id/textView2"
-         android:layout_centerHorizontal="true"
-         android:layout_marginTop="27dp"
-         android:onClick="createCounter"
-         android:text="@string/buttonCreate" />
-     
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:onClick="createCounter"
+        android:text="@string/buttonCreate" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:onClick="gotoCounterList"
+        android:text="@string/listButtonText" />
+
 </RelativeLayout>
