@@ -9,5 +9,7 @@
     <string name="enterNameText">Name of New Button</string>
     <string name="enter_name">Enter here</string>
 	<string name="saveNew">Create</string>
+	<string name="welcome1">Count</string>
+	<string name="welcome2">For all your counting needs!</string>
     
 </resources>
