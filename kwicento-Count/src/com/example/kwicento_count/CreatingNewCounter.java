@@ -62,6 +62,8 @@ public class CreatingNewCounter extends Activity {
 		EditText editText = (EditText) findViewById(R.id.enter_name);
 		String message = editText.getText().toString();
 		Counter newCounter = new Counter();
+		newCounter.setName(message);
+		finish();
 	}
 
 }

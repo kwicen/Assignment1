@@ -8,7 +8,7 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 
-public class CounterScreen extends Activity {
+public class HomeScreen extends Activity {
 	
 	protected ArrayList <Counter> counterList;
 
@@ -23,6 +23,10 @@ public class CounterScreen extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.counter_screen, menu);
+		
+		CounterListModel newModel = new CounterListModel();
+		ArrayList<Counter> currentList =  newModel.getCurrentCounters();
+		//Serialization.saving(currentList);
 		return true;
 	}
 	

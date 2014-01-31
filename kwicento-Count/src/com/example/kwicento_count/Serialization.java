@@ -15,10 +15,10 @@ public class Serialization implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	protected static final String SAVLOCATION = "file.sav";
-	protected Context fileContext;
+	protected static Context fileContext;
 	
 	//takes in the ArrayList storing the counters and writes it to a file
-	protected void saving(ArrayList<Counter> countLst)
+	protected static void saving(ArrayList<Counter> countLst)
 	{
 		try {
 			FileOutputStream fos = fileContext.getApplicationContext().openFileOutput(SAVLOCATION, 

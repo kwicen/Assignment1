@@ -17,6 +17,7 @@ public class Counter implements Serializable{
 	public Counter()
 	{
 		countsList = null;
+		count = 0;
 	}
 	
 	public Button getCountButton() {
