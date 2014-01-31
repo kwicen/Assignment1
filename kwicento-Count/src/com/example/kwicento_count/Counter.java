@@ -44,9 +44,5 @@ public class Counter implements Serializable{
 		this.count = count;
 	}
 	
-	public void incrementCount(View v)
-	{
-		(this.count)++;
-	}
 	
 }

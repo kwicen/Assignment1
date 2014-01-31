@@ -17,6 +17,8 @@ public class HomeScreen extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_counter_screen);
+		newModel = new CounterListModel();
+		ArrayList<Counter> currentList =  newModel.getCurrentCounters();
 		//ArrayList <Counter> counterList = new ArrayList <Counter>();
 	}
 
@@ -25,8 +27,7 @@ public class HomeScreen extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.counter_screen, menu);
 		
-		newModel = new CounterListModel();
-		ArrayList<Counter> currentList =  newModel.getCurrentCounters();
+		
 		//Serialization.saving(currentList);
 		return true;
 	}
