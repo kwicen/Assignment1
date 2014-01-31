@@ -1,12 +1,14 @@
 package com.example.kwicento_count;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import android.view.View;
 import android.widget.Button;
 
-public class Counter {
+public class Counter implements Serializable{
 	
+	private static final long serialVersionUID = 1L;
 	protected Button countButton;
 	protected int count;
 	protected ArrayList <Counts> lst;
