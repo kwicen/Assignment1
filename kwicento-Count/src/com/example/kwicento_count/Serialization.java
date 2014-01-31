@@ -1,8 +1,10 @@
 package com.example.kwicento_count;
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -35,4 +37,30 @@ public class Serialization implements Serializable{
 		}
 	
 	}
+	
+	// reads the counter ArrayList from the file and then returns it 
+	@SuppressWarnings("unchecked")
+	protected ArrayList<Counter> loading()
+	{
+		ArrayList<Counter> countLst = null;
+		try {
+			FileInputStream fis = fileContext.getApplicationContext().openFileInput(SAVLOCATION);
+			ObjectInputStream ois = new ObjectInputStream(fis);
+			countLst = (ArrayList<Counter>) ois.readObject();
+			ois.close();
+			fis.close();
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return countLst;
+	}
+	
 }
