@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/counting"
         android:layout_alignParentTop="true"
-        android:onClick="creationComplete"
+        android:onClick="increment"
         android:text="@string/nameOfCounter"
         android:textSize="18sp" />
 
@@ -37,7 +37,7 @@
         android:layout_alignBaseline="@+id/button3"
         android:layout_alignBottom="@+id/button3"
         android:layout_centerHorizontal="true"
-        android:onClick="creationComplete"
+        android:onClick="reset"
         android:text="@string/reset"
         android:textSize="18sp" />
 

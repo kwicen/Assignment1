@@ -25,4 +25,9 @@ public class CounterListModel implements Serializable{
 		currentCounters.add(c);
 	}
 	
+	public void deleteCounter(Counter c)
+	{
+		currentCounters.remove(c);
+	}
+	
 }

@@ -49,9 +49,4 @@ public class Counter implements Serializable{
 		(this.count)++;
 	}
 	
-	//public void reset(View v)
-	//{
-		//(this.count) = 0;
-		//ArrayList <Counts> lst = new ArrayList <Counts>();
-	//}
 }

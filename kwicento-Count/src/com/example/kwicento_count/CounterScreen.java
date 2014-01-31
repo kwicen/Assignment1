@@ -6,7 +6,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 import android.annotation.SuppressLint;
@@ -26,6 +25,7 @@ public class CounterScreen extends Activity {
 		setContentView(R.layout.actual_counting_screen);
 		// Show the Up button in the action bar.
 		setupActionBar();
+		//Get the name of the counter, and set the name of the button to it
 		currObj = new Counter();
 		Button text = (Button) findViewById(R.id.button1);
 		String name = currObj.getName();
@@ -70,6 +70,8 @@ public class CounterScreen extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
+	//when the main button is pressed, will increment the count of the counter object
+	// and update what is displayed on the screen
 	public void increment(View view) {
 		int num = currObj.getCount();
 		num++;
@@ -78,4 +80,22 @@ public class CounterScreen extends Activity {
 		text.setText("Count: "+num);
 	}
 
+	//Updates the counter's count to 0 and changes the count 
+	//displayed on screen
+	public void reset(View view)
+	{
+		currObj.setCount(0);
+		TextView text = (TextView) findViewById(R.id.counting);
+		text.setText("Count: 0");
+	}
+	
+	//Method first gets the array of counters from the home screen, and then 
+	//calls the method in CounterListModel that deletes the current counter
+	//from its array. then it returns to the list screen
+	public void deleteCounter(View view)
+	{
+		CounterListModel mod = HomeScreen.getNewModel();
+		mod.deleteCounter(currObj);
+		finish();
+	}
 }
