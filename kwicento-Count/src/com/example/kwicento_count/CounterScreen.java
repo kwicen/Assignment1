@@ -28,7 +28,7 @@ public class CounterScreen extends Activity {
 	
 	public void createCounter(View view) {
 	    // Do something in response to button
-		Intent intent = new Intent(this, CreatingNewButton.class);
+		Intent intent = new Intent(this, CreatingNewCounter.class);
 		startActivity(intent);
 	}
 	

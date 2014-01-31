@@ -11,9 +11,13 @@ public class Counter implements Serializable{
 	private static final long serialVersionUID = 1L;
 	protected Button countButton;
 	protected int count;
-	protected ArrayList <Counts> lst;
 	protected String name;
+	protected ArrayList<Counts> countsList;
 	
+	public Counter()
+	{
+		countsList = null;
+	}
 	
 	public Button getCountButton() {
 		return countButton;
@@ -23,6 +27,14 @@ public class Counter implements Serializable{
 		this.countButton = countButton;
 	}
 	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public int getCount() {
 		return count;
 	}
@@ -31,22 +43,14 @@ public class Counter implements Serializable{
 		this.count = count;
 	}
 	
-	public ArrayList<Counts> getLst() {
-		return lst;
-	}
-	
-	public void setLst(ArrayList<Counts> lst) {
-		this.lst = lst;
-	}
-	
 	public void incrementCount(View v)
 	{
 		(this.count)++;
 	}
 	
-	public void reset(View v)
-	{
-		(this.count) = 0;
-		ArrayList <Counts> lst = new ArrayList <Counts>();
-	}
+	//public void reset(View v)
+	//{
+		//(this.count) = 0;
+		//ArrayList <Counts> lst = new ArrayList <Counts>();
+	//}
 }

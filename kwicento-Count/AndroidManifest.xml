@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.kwicento_count.CreatingNewButton"
+            android:name="com.example.kwicento_count.CreatingNewCounter"
             android:label="@string/title_activity_creating_new_button"
             android:parentActivityName="com.example.kwicento_count.CounterScreen" >
             <meta-data

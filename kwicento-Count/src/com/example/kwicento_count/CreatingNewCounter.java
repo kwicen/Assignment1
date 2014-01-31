@@ -5,12 +5,13 @@ import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.support.v4.app.NavUtils;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.os.Build;
 
-public class CreatingNewButton extends Activity {
+public class CreatingNewCounter extends Activity {
 
 	@SuppressLint("NewApi")
 	@Override
@@ -58,8 +59,9 @@ public class CreatingNewButton extends Activity {
 	    // NEED TO FILL THIS IN LATER, CREATE NEW BUTTON/COUNTER WHEN PRESSED
 		//Intent intent = new Intent(this, CreatingNewButton.class);
 		//startActivity(intent);
-		
-		finish();
+		EditText editText = (EditText) findViewById(R.id.enter_name);
+		String message = editText.getText().toString();
+		Counter newCounter = new Counter();
 	}
 
 }
