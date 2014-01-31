@@ -24,12 +24,13 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000a;
+        public static final int action_settings=0x7f08000b;
         public static final int button1=0x7f080003;
         public static final int button2=0x7f080008;
         public static final int button3=0x7f080007;
         public static final int counting=0x7f080006;
         public static final int currCounterList=0x7f080000;
+        public static final int edit=0x7f08000a;
         public static final int enter_name=0x7f080004;
         public static final int enter_new_name=0x7f080005;
         public static final int stat=0x7f080009;
@@ -56,6 +57,7 @@ public final class R {
         public static final int changeName=0x7f050013;
         public static final int counterTotal=0x7f05000e;
         public static final int delete=0x7f050010;
+        public static final int editName=0x7f050014;
         public static final int enterNameText=0x7f050005;
         public static final int enter_name=0x7f050006;
         public static final int hello_world=0x7f050002;

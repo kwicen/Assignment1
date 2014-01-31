@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.os.Build;
 
 public class CounterScreen extends Activity {
@@ -98,4 +99,9 @@ public class CounterScreen extends Activity {
 		mod.deleteCounter(currObj);
 		finish();
 	}
+	public void editCounter(View view) {
+		Intent intent = new Intent(this, EditingCounterScreen.class);
+		startActivity(intent);	
+	}
+	
 }

@@ -18,29 +18,6 @@
         android:text="@string/nameOfCounter"
         android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/button1"
-        android:layout_marginBottom="30dp"
-        android:layout_marginRight="14dp"
-        android:onClick="deleteCounter"
-        android:text="@string/delete"
-        android:textSize="18sp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button3"
-        android:layout_alignBottom="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:onClick="reset"
-        android:text="@string/reset"
-        android:textSize="18sp" />
-
     <TextView
         android:id="@+id/counting"
         android:layout_width="wrap_content"
@@ -51,16 +28,48 @@
         android:text="@string/counterTotal"
         android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/stat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button2"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_marginLeft="18dp"
-        android:onClick="creationComplete"
-        android:text="@string/stats"
-        android:textSize="18sp" />
+     <Button
+         android:id="@+id/stat"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/button2"
+         android:layout_alignBottom="@+id/button2"
+         android:layout_alignLeft="@+id/button1"
+         android:onClick="creationComplete"
+         android:text="@string/stats"
+         android:textSize="18sp" />
+
+     <Button
+         android:id="@+id/button3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/edit"
+         android:layout_alignParentRight="true"
+         android:layout_marginBottom="14dp"
+         android:onClick="deleteCounter"
+         android:text="@string/delete"
+         android:textSize="18sp" />
+
+     <Button
+         android:id="@+id/button2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/button3"
+         android:layout_alignBottom="@+id/button3"
+         android:layout_toLeftOf="@+id/button3"
+         android:onClick="reset"
+         android:text="@string/reset"
+         android:textSize="18sp" />
+
+     <Button
+         android:id="@+id/edit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="36dp"
+         android:layout_toLeftOf="@+id/button2"
+         android:onClick="editCounter"
+         android:text="@string/editName"
+         android:textSize="18sp" />
 
 </RelativeLayout>

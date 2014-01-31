@@ -21,6 +21,9 @@
     <string name="stats">Stats</string>
     <string name="newNameText">New Name of Counter</string>
     <string name="changeName">Change</string>
+    <string name="editName">Edit</string>
+    
+    
     
 
 </resources>
