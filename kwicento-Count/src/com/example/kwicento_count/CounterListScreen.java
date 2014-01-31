@@ -4,6 +4,7 @@ package com.example.kwicento_count;
 import java.util.ArrayList;
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.ListActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
@@ -42,9 +43,9 @@ public class CounterListScreen extends Activity {
 		
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.list_item, stringCounts);
 		existingCounters.setAdapter(adapter);
-		
-		
 	}
+	
+	
 
 	/**
 	 * Set up the {@link android.app.ActionBar}, if the API is available.
