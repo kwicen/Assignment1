@@ -23,7 +23,6 @@ public class CounterListModel implements Serializable{
 	public void addNewCounter(Counter c)
 	{
 		currentCounters.add(c);
-	
 	}
 	
 }

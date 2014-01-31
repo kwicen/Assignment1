@@ -1,14 +1,18 @@
 package com.example.kwicento_count;
 
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
 import android.os.Build;
 
 public class CounterListScreen extends Activity {
+	
+	private ListView existingCounters;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +20,7 @@ public class CounterListScreen extends Activity {
 		setContentView(R.layout.activity_counter_list_screen);
 		// Show the Up button in the action bar.
 		setupActionBar();
+		existingCounters = (ListView) findViewById(R.id.currCounterList);
 	}
 
 	/**

@@ -1,7 +1,5 @@
 package com.example.kwicento_count;
 
-import java.util.ArrayList;
-
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -57,21 +55,16 @@ public class CreatingNewCounter extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	//gets the current model object which contains an ArrayList of Counters, and 
+	//adds a new counter to it, using the name that the user specified
 	public void creationComplete(View view) {
-	    // NEED TO FILL THIS IN LATER, CREATE NEW BUTTON/COUNTER WHEN PRESSED
-		//Intent intent = new Intent(this, CreatingNewButton.class);
-		//startActivity(intent);
 		EditText editText = (EditText) findViewById(R.id.enter_name);
 		String message = editText.getText().toString();
 		Counter newCounter = new Counter();
 		newCounter.setName(message);
 		CounterListModel currModel = HomeScreen.getNewModel();
 		currModel.addNewCounter(newCounter);
-		//ArrayList<Counter> currArray = currModel.getCurrentCounters();
-		//ArrayList<Counter> currArray = HomeScreen.getNewModel().getCurrentCounters();
-		
-		//currArray.add(newCounter);  //this is the problem 
-		//currModel.setCurrentCounters(currArray);
 		
 		finish();
 	}
