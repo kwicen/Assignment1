@@ -13,5 +13,12 @@
     <string name="welcome2">For all your counting needs!</string>
     <string name="listButtonText">See Existing</string>
     <string name="title_activity_counter_list_screen">List of Counters</string>
+    <string name="title_activity_counter_screen">Counting Time</string>
+    <string name="nameOfCounter">Temp Name</string>
+    <string name="counterTotal">Count: 0</string>
+    <string name="reset">Reset</string>
+    <string name="delete">Delete</string>
+    <string name="stats">Stats</string>
+    
 
 </resources>
