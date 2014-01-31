@@ -11,6 +11,7 @@ import android.view.View;
 public class HomeScreen extends Activity {
 	
 	protected ArrayList <Counter> counterList;
+	protected static CounterListModel newModel;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,12 +25,13 @@ public class HomeScreen extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.counter_screen, menu);
 		
-		CounterListModel newModel = new CounterListModel();
+		newModel = new CounterListModel();
 		ArrayList<Counter> currentList =  newModel.getCurrentCounters();
 		//Serialization.saving(currentList);
 		return true;
 	}
 	
+
 	public void createCounter(View view) {
 	    // Do something in response to button
 		Intent intent = new Intent(this, CreatingNewCounter.class);
@@ -40,6 +42,14 @@ public class HomeScreen extends Activity {
 	    // Do something in response to button
 		Intent navi = new Intent(this, CounterListScreen.class);
 		startActivity(navi);
+	}
+	
+	public static CounterListModel getNewModel() {
+		return newModel;
+	}
+
+	public void setNewModel(CounterListModel newModel) {
+		this.newModel = newModel;
 	}
 
 }

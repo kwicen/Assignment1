@@ -10,7 +10,7 @@ public class CounterListModel implements Serializable{
 	
 	public CounterListModel()
 	{
-		currentCounters = null;	
+		currentCounters = new ArrayList<Counter>();	
 	}
 	
 	public ArrayList<Counter> getCurrentCounters() {
@@ -20,5 +20,10 @@ public class CounterListModel implements Serializable{
 		this.currentCounters = currentCounters;
 	}
 			
+	public void addNewCounter(Counter c)
+	{
+		currentCounters.add(c);
+	
+	}
 	
 }
