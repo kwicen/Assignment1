@@ -4,12 +4,19 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.os.Build;
 
 public class CounterScreen extends Activity {
+	
+	protected Counter currObj; 
+	//represents the object that will be represented by this screen at this time 
 
 	
 	@SuppressLint("NewApi")
@@ -19,6 +26,14 @@ public class CounterScreen extends Activity {
 		setContentView(R.layout.actual_counting_screen);
 		// Show the Up button in the action bar.
 		setupActionBar();
+		currObj = new Counter();
+		Button text = (Button) findViewById(R.id.button1);
+		String name = currObj.getName();
+		text.setText(name);
+	}
+
+	public void setCurrObj(Counter currObj) {
+		this.currObj = currObj;
 	}
 
 	/**
@@ -53,6 +68,14 @@ public class CounterScreen extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	public void increment(View view) {
+		int num = currObj.getCount();
+		num++;
+		currObj.setCount(num);
+		TextView text = (TextView) findViewById(R.id.counting);
+		text.setText("Count: "+num);
 	}
 
 }

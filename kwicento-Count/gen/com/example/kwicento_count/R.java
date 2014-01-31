@@ -28,9 +28,9 @@ public final class R {
         public static final int button1=0x7f080003;
         public static final int button2=0x7f080007;
         public static final int button3=0x7f080006;
+        public static final int counting=0x7f080005;
         public static final int currCounterList=0x7f080000;
         public static final int enter_name=0x7f080004;
-        public static final int fillName=0x7f080005;
         public static final int stat=0x7f080008;
         public static final int textView1=0x7f080001;
         public static final int textView2=0x7f080002;
