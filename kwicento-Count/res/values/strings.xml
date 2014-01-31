@@ -6,7 +6,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="buttonCreate">New Counter</string>
     <string name="title_activity_creating_new_button">Creating New Counter</string>
-    <string name="enterNameText">Name of New Button</string>
+    <string name="enterNameText">Name of New Counter</string>
     <string name="enter_name">Enter here</string>
     <string name="saveNew">Create</string>
     <string name="welcome1">Count</string>
@@ -19,6 +19,8 @@
     <string name="reset">Reset</string>
     <string name="delete">Delete</string>
     <string name="stats">Stats</string>
+    <string name="newNameText">New Name of Counter</string>
+    <string name="changeName">Change</string>
     
 
 </resources>
