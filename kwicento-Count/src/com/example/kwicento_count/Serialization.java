@@ -10,13 +10,14 @@ import android.content.Context;
 public class Serialization {
 
 	protected static final String SAVLOCATION = "file.sav";
+	protected Context fileContext;
 	
 	protected void saving(ArrayList<Counter> countLst)
 	{
 		try {
-			FileOutputStream fos = openFileOutput(SAVLOCATION, Context.MODE_APPEND);
-			fos.write(new String(date.toString() + " | " + text)
-					.getBytes());
+			FileOutputStream fos = fileContext.getApplicationContext().openFileOutput(SAVLOCATION, 
+					Context.MODE_APPEND);
+			fos.write
 			fos.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
