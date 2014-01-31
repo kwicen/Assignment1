@@ -43,6 +43,8 @@ public class CounterListScreen extends Activity {
 		
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.list_item, stringCounts);
 		existingCounters.setAdapter(adapter);
+		
+		
 	}
 	
 	

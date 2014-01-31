@@ -7,8 +7,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
-import java.util.ArrayList;
-
 import android.content.Context;
 
 public class Serialization implements Serializable{
@@ -17,14 +15,14 @@ public class Serialization implements Serializable{
 	protected static final String SAVLOCATION = "file.sav";
 	protected static Context fileContext;
 	
-	//takes in the ArrayList storing the counters and writes it to a file
-	protected static void saving(ArrayList<Counter> countLst)
+	//takes in the model object and writes it to a file
+	protected static void saving(CounterListModel mod)
 	{
 		try {
 			FileOutputStream fos = fileContext.getApplicationContext().openFileOutput(SAVLOCATION, 
 					Context.MODE_APPEND);
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
-			oos.writeObject(countLst);
+			oos.writeObject(mod);
 			oos.flush();
             oos.close();
             fos.close();
@@ -38,15 +36,14 @@ public class Serialization implements Serializable{
 	
 	}
 	
-	// reads the counter ArrayList from the file and then returns it 
-	@SuppressWarnings("unchecked")
-	protected ArrayList<Counter> loading()
+	// reads the model object from the file and then returns it 
+	protected CounterListModel loading()
 	{
-		ArrayList<Counter> countLst = null;
+		CounterListModel mod = null;
 		try {
 			FileInputStream fis = fileContext.getApplicationContext().openFileInput(SAVLOCATION);
 			ObjectInputStream ois = new ObjectInputStream(fis);
-			countLst = (ArrayList<Counter>) ois.readObject();
+			mod = (CounterListModel) ois.readObject();
 			ois.close();
 			fis.close();
 			
@@ -60,7 +57,7 @@ public class Serialization implements Serializable{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return countLst;
+		return mod;
 	}
 	
 }
