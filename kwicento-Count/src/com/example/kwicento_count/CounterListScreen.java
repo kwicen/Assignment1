@@ -1,10 +1,12 @@
 package com.example.kwicento_count;
 
 
+import java.util.ArrayList;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
@@ -21,6 +23,27 @@ public class CounterListScreen extends Activity {
 		// Show the Up button in the action bar.
 		setupActionBar();
 		existingCounters = (ListView) findViewById(R.id.currCounterList);
+	}
+
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		super.onStart();
+		CounterListModel mod = HomeScreen.getNewModel();
+		ArrayList<Counter> arr = mod.getCurrentCounters();
+		ArrayList<String> stringCounts = new ArrayList<String>();
+		
+		//Create an array of strings containing the name and counts of the counters to display
+		for (int i=0; i<arr.size();i++)
+		{
+			String newValue = (arr.get(i)).getName()+": "+(arr.get(i)).getCount();
+			stringCounts.add(newValue);
+		}
+		
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.list_item, stringCounts);
+		existingCounters.setAdapter(adapter);
+		
+		
 	}
 
 	/**
